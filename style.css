@@ -21,6 +21,7 @@
 .action-buttons {
     display: flex; /* Nustato flex konteinerio elgseną */
     gap: 10px; /* Tarpas tarp mygtukų */
+    
 }
 
 .action-buttons a {
@@ -63,4 +64,38 @@
     font-weight: 700; /* Stambesnis svoris */
     color: #333; /* Spalva, pvz., tamsiai pilka */
     margin-top: 5px; /* Papildomas tarpas viršuje */
+}
+
+/* CSS animacija pulsavimui */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pulsate {
+    animation: pulse 2s infinite;
+    font-size: 1.2em; /* Pradinis teksto dydis */
+    transition: font-size 0.3s ease-out; /* Jei norite, kad teksto dydis palaipsniui didėtų */
+    font-weight: bolder;
+}
+
+.pulsate .text {
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    font-weight: bolder;
+}
+
+.pulsate:hover {
+    font-size: 1.3em; /* Didinimo dydis pele paspaudus */
+    font-weight: bolder;
 }
