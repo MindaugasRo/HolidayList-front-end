@@ -19,39 +19,31 @@
 }
 
 .action-buttons {
-    display: flex; /* Nustato flex konteinerio elgseną */
-    gap: 10px; /* Tarpas tarp mygtukų */
-    
-}
+    display: flex; 
+    gap: 10px;
+    }
 
 .action-buttons a {
     flex: 1; /* Lygiuoja mygtukus horizontalioje eilėje */
-}
-
-.action-buttons .delete {
-    right: 45px; /* Atstumą nuo dešinio krašto galima koreguoti */
 }
 
 .table-responsive {
     overflow-x: auto; /* Užtikrina horizontalų slankiklį, jei lentelės plotis viršija konteinerio plotį */
 }
 
-.table {
-    width: 100%; /* Lentelė užima visą tėvinio konteinerio plotį */
-    border-collapse: collapse; /* Sujungia lentelės rėmelio kraštus */
-}
-
-.table td, .table th {
-    border: 1px solid #dee2e6; /* Nustato lentelės celės kraštus */
-    padding: 8px; /* Nustato celės vidų nuo kraštų atstumą */
+.table-bordered th,.table-bordered td {
+    border: none;
 }
 
 #selectedDaysCount {
+    font-family: 'Roboto', sans-serif; /* Naudoti Google šriftą Roboto */
+    font-size: 18px; /* Pavyzdinis dydis */
+    font-weight: 700; /* Stambesnis svoris */
     display: block;
     margin-top: 5px;
     font-size: px;
-    color: #6c757d;
-    font-style: italic;
+    color: #07c536;
+    font-style: normal;
 }
 
 #selectedDaysCount span {
@@ -65,6 +57,13 @@
     color: #333; /* Spalva, pvz., tamsiai pilka */
     margin-top: 5px; /* Papildomas tarpas viršuje */
 }
+
+.bungee-spice-regular {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large
+  }
 
 /* CSS animacija pulsavimui */
 @keyframes pulse {

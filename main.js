@@ -25,7 +25,6 @@ $(function() {
         });
     });
 
-    // form.addEventListener("Create", createUser);
     getHolidays();
 
     async function getHolidays() {
@@ -50,7 +49,7 @@ $(function() {
                 <td>${holiday.description}</td>
                 <td>${holiday.price}</td>
                 <td>${holiday.photos}</td>
-                <td>${holiday.averageRating}</td>
+                <td class="bungee-spice-regular">${holiday.average_rating}</td>
                 <td class="action-buttons">
                     <a href="" id="${holiday.id}" class="btn btn-sm btn-primary update"><i class="fas fa-edit"></i></a>
                     <a href="" id="${holiday.id}" class="btn btn-sm btn-danger delete"><i class="fas fa-trash-alt"></i></a>
