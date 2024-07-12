@@ -1,0 +1,66 @@
+.star-rating {
+    text-align: left;
+    direction: rtl;
+}
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+.star-rating input:checked ~ label {
+    color: gold;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+.action-buttons {
+    display: flex; /* Nustato flex konteinerio elgseną */
+    gap: 10px; /* Tarpas tarp mygtukų */
+}
+
+.action-buttons a {
+    flex: 1; /* Lygiuoja mygtukus horizontalioje eilėje */
+}
+
+.action-buttons .delete {
+    right: 45px; /* Atstumą nuo dešinio krašto galima koreguoti */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Užtikrina horizontalų slankiklį, jei lentelės plotis viršija konteinerio plotį */
+}
+
+.table {
+    width: 100%; /* Lentelė užima visą tėvinio konteinerio plotį */
+    border-collapse: collapse; /* Sujungia lentelės rėmelio kraštus */
+}
+
+.table td, .table th {
+    border: 1px solid #dee2e6; /* Nustato lentelės celės kraštus */
+    padding: 8px; /* Nustato celės vidų nuo kraštų atstumą */
+}
+
+#selectedDaysCount {
+    display: block;
+    margin-top: 5px;
+    font-size: px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+#selectedDaysCount span {
+    font-size: inherit; /* Paliekame span elementui tą patį dydį kaip #selectedDaysCount */
+}
+
+#season {
+    font-family: 'Roboto', sans-serif; /* Naudoti Google šriftą Roboto */
+    font-size: 18px; /* Pavyzdinis dydis */
+    font-weight: 700; /* Stambesnis svoris */
+    color: #333; /* Spalva, pvz., tamsiai pilka */
+    margin-top: 5px; /* Papildomas tarpas viršuje */
+}
